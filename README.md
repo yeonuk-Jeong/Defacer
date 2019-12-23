@@ -5,7 +5,7 @@ Asan medical center medical image defacer(de-identification)
 
 This source code contains an algorithm for detecting and removing identifiable facial features (eyes, nose, and ears).  
 3D Unet-based neural network were used to detect eyes, nose and ears in the input medical image
-Creating bounding box at the largest segmented points that location of each predicted feature and __reducing the inside box size to avoid impinging on region of interest__ such as brain.     
+Creating bounding box at the largest segmented points that location of each predicted feature and __only removing suface facial features to avoid impinging on region of interest__ such as brain.     
 this will be help with the secondary use of medical data by obscuring it locally to minimize information loss.  
 The Nifti version includes both training and application, and the Dicom version uses a model that has already been trained to create a de-identified file.  
   
