@@ -10,4 +10,6 @@ related rights legislation that applies to your use. In addition,
 no permission is required from the rights-holder(s) for non-commercial uses. 
 For other uses you need to obtain permission from the rights-holder(s).
 
+특허 출원번호 및 출원일자: 10-2019-0171109 (2019-12-19)
+
 contact: yeonuk.pharmd@gmail.com
