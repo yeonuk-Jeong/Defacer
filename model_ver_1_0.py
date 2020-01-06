@@ -17,6 +17,12 @@ from keras.models import Model
 
 from keras import layers, initializers, regularizers, constraints
 from keras.layers import Layer, InputSpec
+from keras.utils import to_categorical
+
+from skimage.filters import threshold_triangle
+from skimage.morphology import remove_small_holes
+from skimage.measure import marching_cubes_lewiner
+
 
 # # Load Data
 
