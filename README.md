@@ -14,6 +14,27 @@ Users could select the combination of facial parts (eyes, nose and ears) to de-i
 - Selective de-identification of facial features (eyes, nose, and ears)
 - Removing metadata with privacy in dicom header 
 - Supporting multi medical image types (nifti, dicom)  
+
+### Also
+__In the dicom format__, various personal information is recorded in the header.  
+This program handles not only the image but also the sensitive header information.
+- (0008, 0013) Instance Creation Time 
+- (0008, 0020) Study Date               
+- (0008, 0021) Series Date                
+- (0008, 0022) Acquisition Date             
+- (0008, 0023) Content Date            
+- (0008, 0030) Study Time               
+- (0008, 0031) Series Time                    
+- (0008, 0032) Acquisition Time           
+- (0008, 0033) Content Time            
+- (0008, 0080) Institution Name      
+- (0008, 0090) Referring Physician's Name  
+- (0008, 1070) Operators' Name          
+- (0010, 0010) Patient's Name                
+- (0010, 0020) Patient ID                  
+- (0010, 0030) Patient's Birth Date             
+- (0010, 0040) Patient's Sex                   
+- (0010, 1010) Patient's Age                    
   
 ## prerequisites
 - python (3.x)
