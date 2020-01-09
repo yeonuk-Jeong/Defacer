@@ -60,6 +60,7 @@ Convolution block consists of Convolution(3x3) - Instance Normalization (because
 
 Removing facial feature sample -ITK sanp viewer 
   
-![remove_sample_MRIcron_rendering](https://user-images.githubusercontent.com/49013508/63914279-a6313700-ca6d-11e9-862c-3b1d3c96ad4c.png)  
+![Screenshot-1](https://user-images.githubusercontent.com/49013508/72033610-1da58b80-32d6-11ea-8b72-1b45ad85f365.png)
+
   
 Removing facial feature sample -MRI cron rendering 
