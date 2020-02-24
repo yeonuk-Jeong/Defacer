@@ -19,7 +19,11 @@ from keras import backend as K
 
 import matplotlib.pyplot as plt
 
-
+def axis_transpose(img):
+	ax = [0,1,2]
+	np.random.shuffle(ax)
+	img = np.transpose(img,(ax[0],ax[1],ax[2],3))
+	return img
 
 def z_normalization(img, num_channels):
     for i in range(num_channels):
@@ -130,6 +134,7 @@ def random_zoom(x, zoom_range, row_index=3, col_index=2, dep_index = 1, channel_
     transform_matrix = transform_matrix_offset_center(zoom_matrix, h, w, d)
     x = apply_transform(x, transform_matrix, channel_index, fill_mode, cval)
     return x
+
 
 
 def random_barrel_transform(x, intensity):
@@ -300,6 +305,7 @@ class ImageDataGenerator(object):
                  horizontal_flip=False,
                  vertical_flip=False,
                  depthly_flip=False,
+                 axis_transpose=False,
                  rescale=None,
                  dim_ordering='default'):
         if dim_ordering == 'default':
@@ -477,6 +483,9 @@ class ImageDataGenerator(object):
         if self.depthly_flip:
             if np.random.random() < 0.5:
                 x = flip_axis(x, img_dep_index)
+
+        if self.axis_transpose:
+        	x = axis_transpose(x)
 
         # TODO:
         # channel-wise normalization
