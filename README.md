@@ -1,6 +1,17 @@
 Asan medical center medical image defacer(de-identification)
 # De-facer: De-identifier reconstructable facial information in Medical image (CT, MRI) 
 
+## Results
+ 
+![gitPicture3](https://user-images.githubusercontent.com/49013508/78311625-5333db00-758c-11ea-86a4-03debda6fb8c.png)
+  
+Removing facial feature : 3D rendering sample 
+
+
+
+
+
+
 ### To protect individually identifiable health information through permitting only certain uses, metadata in image headers and reconstructable personal data like 3D facial image must be de-identified.   
 
 This source code contains an algorithm for detecting and removing identifiable facial features (eyes, nose, and ears).  
@@ -81,11 +92,8 @@ Convolution block consists of Convolution(3x3) - Instance Normalization (because
   
 [1] Schlemper, J., Oktay, O., Schaap, M., Heinrich, M., Kainz, B., Glocker, B., & Rueckert, D. (2019). Attention gated networks: Learning to leverage salient regions in medical images. Medical image analysis, 53, 197-207.
 &nbsp;
+
+
 ## Results
 ![gitPicture2](https://user-images.githubusercontent.com/49013508/78311624-5202ae00-758c-11ea-855b-8a9f2902c70e.png)
 Removing facial feature sample -ITK sanp viewer 
-
-  
-![gitPicture3](https://user-images.githubusercontent.com/49013508/78311625-5333db00-758c-11ea-86a4-03debda6fb8c.png)
-  
-Removing facial feature sample -3D rendering 
