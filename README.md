@@ -53,17 +53,20 @@ This program handles not only the image but also the sensitive header informatio
 # Model training 
 ## Data
 AIBL neuroimage data Nifty file.  
-240 * 256 * 160 image T1w MPRage  
-training set : 247, 28 validation set : 28, test set : 28
+FOV 240mm * 256mm * 160mm image T1w MPRage  
+training set : 200, validation set : 20, test set : 20, external validation set : 20 (OASIS-3 data, FOV 176mm x 256mm x 256mm)
 
 ## Labeling
-![labeling_sample](https://user-images.githubusercontent.com/49013508/63914266-a03b5600-ca6d-11e9-9331-55ac64f62b84.png)
+![gitPicture1](https://user-images.githubusercontent.com/49013508/78311618-4fa05400-758c-11ea-8f22-268abaf287e3.png)
   
 labeling sample. the spherical point at the facial feature.  
 
 ## Data augmentation
+Gaussian noise filter  
 Rotataion, shift, filp, shear on each axis randomly.  
 Randomly zoom in or zoom out in the range of [0.9, 1.10] 
+randomly transposing between axes
+
 I modified a module keras.preprocessing.image and use ImageDataGenerator function to do data augmentation.  
   
 See keras_image_preprocessing1.py for detail.
@@ -79,12 +82,10 @@ Convolution block consists of Convolution(3x3) - Instance Normalization (because
 [1] Schlemper, J., Oktay, O., Schaap, M., Heinrich, M., Kainz, B., Glocker, B., & Rueckert, D. (2019). Attention gated networks: Learning to leverage salient regions in medical images. Medical image analysis, 53, 197-207.
 &nbsp;
 ## Results
-![collage1](https://user-images.githubusercontent.com/49013508/71356302-23f0f380-25c5-11ea-90ba-63f3fcad6d49.png)  
-![collage2](https://user-images.githubusercontent.com/49013508/71356330-3f5bfe80-25c5-11ea-9229-a0fe982fd8d8.png)
-
+![gitPicture2](https://user-images.githubusercontent.com/49013508/78311624-5202ae00-758c-11ea-855b-8a9f2902c70e.png)
 Removing facial feature sample -ITK sanp viewer 
-  
-![Screenshot-1](https://user-images.githubusercontent.com/49013508/72033610-1da58b80-32d6-11ea-8b72-1b45ad85f365.png)
 
   
-Removing facial feature sample -MRI cron rendering 
+![gitPicture3](https://user-images.githubusercontent.com/49013508/78311625-5333db00-758c-11ea-86a4-03debda6fb8c.png)
+  
+Removing facial feature sample -3D rendering 
