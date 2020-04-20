@@ -83,9 +83,8 @@ I modified a module keras.preprocessing.image and use ImageDataGenerator functio
 See keras_image_preprocessing1.py for detail.
                                         
 ## Model structure
-![model_pic](https://user-images.githubusercontent.com/49013508/63914225-784bf280-ca6d-11e9-89c7-6d63b63db40d.png)  
-  
-![attention_gate](https://user-images.githubusercontent.com/49013508/63914263-9ca7cf00-ca6d-11e9-9f53-50d2e769265a.jpg)
+![image](https://user-images.githubusercontent.com/49013508/79738609-eb291700-8337-11ea-80ad-3d32767d4e55.png)
+
   
 I modify attention gated U-net[1] as introduce Convolution block.  
 Convolution block consists of Convolution(3x3) - Instance Normalization (because batch size is 1) - ReLU - Convolution(3x3) with residual SE net - Instance Normalization - ReLU  Segmentation map is made through 1x1 convoultion with number of channels equal to the number of channels of one hot label data. and activate sofmax.  
