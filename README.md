@@ -86,8 +86,8 @@ See keras_image_preprocessing1.py for detail.
 ![image](https://user-images.githubusercontent.com/49013508/79738609-eb291700-8337-11ea-80ad-3d32767d4e55.png)
 
   
-I modify attention gated U-net[1] as introduce Convolution block.  
-Convolution block consists of Convolution(3x3) - Instance Normalization (because batch size is 1) - ReLU - Convolution(3x3) with residual SE net - Instance Normalization - ReLU  Segmentation map is made through 1x1 convoultion with number of channels equal to the number of channels of one hot label data. and activate sofmax.  
+I modify attention gated U-net [1] .  
+Convolution block + SENet consists of Convolution(3x3) - Instance Normalization (because batch size is 1) - ReLU - Convolution(3x3) with residual SE net - Instance Normalization - ReLU  Segmentation map is made through 1x1 convoultion with number of channels equal to the number of channels of one hot label data. and activate sofmax.  
   
 [1] Schlemper, J., Oktay, O., Schaap, M., Heinrich, M., Kainz, B., Glocker, B., & Rueckert, D. (2019). Attention gated networks: Learning to leverage salient regions in medical images. Medical image analysis, 53, 197-207.
 &nbsp;
