@@ -14,13 +14,17 @@ Removing facial feature : 3D rendering sample
 
 ### To protect individually identifiable health information through permitting only certain uses, metadata in image headers and reconstructable personal data like 3D facial image must be de-identified.   
 
+High resolution three-dimensional medical images that include the face can be exposed their faces as the photo level and there is a risk of infringement of personal information when sharing data. According to U.S. Health Insurance Portability and Accountability Act's Privacy Rule (HIPAA), it is included in "full face photographic images and any comparable images"as direct identifiers and is considered as protected health information. General Data Protection Regulation (GDPR) also categorizes facial images as a biometric data. GDPR stipulates that special restrictions should be placed on the processing of biometric data.   
+
+
+
 This source code contains an algorithm for detecting and removing identifiable facial features (eyes, nose, and ears).  
 3D Unet-based neural network were used to detect eyes, nose and ears in the input medical image
 Creating bounding box at the largest segmented points that location of each predicted feature and __only removing surface facial features to avoid impinging on region of interest__ such as brain.     
 this will be help with the secondary use of medical data by obscuring it locally to minimize information loss.  
 The Nifti version includes both training and application, and the Dicom version uses a model that has already been trained to create a de-identified file.  
   
-Users could select the combination of facial parts (eyes, nose and ears) to de-identify and this function would be helpful by minimizing information loss.    
+Users can create anonymized images that deface the desired parts of among the eyes, nose, and ears, which helps provide data for secondary research without violating relevant regulations.   
   &nbsp;
 - Selective de-identification of facial features (eyes, nose, and ears)
 - Removing metadata with privacy in dicom header 
