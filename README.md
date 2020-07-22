@@ -100,3 +100,8 @@ Convolution block + SENet consists of Convolution(3x3) - Instance Normalization 
 ## Results
 ![gitPicture2](https://user-images.githubusercontent.com/49013508/78311624-5202ae00-758c-11ea-855b-8a9f2902c70e.png)
 Removing facial feature sample -ITK sanp viewer 
+
+
+## paper (in preparation)
+Anonymizing Facial Features in Magnetic Resonance Images Using Deep-Leaning Technology
+-yeonuk jeong, Soyoung Yoo,, Young-Hak Kim, Woo Hyun Shim 
