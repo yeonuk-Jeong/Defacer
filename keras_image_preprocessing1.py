@@ -20,10 +20,10 @@ from keras import backend as K
 import matplotlib.pyplot as plt
 
 def axis_transpose(img):
-	ax = [0,1,2]
-	np.random.shuffle(ax)
-	img = np.transpose(img,(ax[0],ax[1],ax[2],3))
-	return img
+    ax = [0,1,2]
+    np.random.shuffle(ax)
+    img = np.transpose(img,(ax[0],ax[1],ax[2],3))
+    return img
 
 def z_normalization(img, num_channels):
     for i in range(num_channels):
@@ -134,7 +134,6 @@ def random_zoom(x, zoom_range, row_index=3, col_index=2, dep_index = 1, channel_
     transform_matrix = transform_matrix_offset_center(zoom_matrix, h, w, d)
     x = apply_transform(x, transform_matrix, channel_index, fill_mode, cval)
     return x
-
 
 
 def random_barrel_transform(x, intensity):
@@ -299,6 +298,7 @@ class ImageDataGenerator(object):
                  depth_shift_range=0.,
                  shear_range=0.,
                  zoom_range=0.,
+                 #brightness_range =0.,
                  channel_shift_range=0.,
                  fill_mode='nearest',
                  cval=0.,
@@ -306,6 +306,7 @@ class ImageDataGenerator(object):
                  vertical_flip=False,
                  depthly_flip=False,
                  axis_transpose=False,
+                 #color_reversal=False,
                  rescale=None,
                  dim_ordering='default'):
         if dim_ordering == 'default':
@@ -487,6 +488,17 @@ class ImageDataGenerator(object):
         if self.axis_transpose:
         	x = axis_transpose(x)
 
+        #if self.brightness_range[0] == 1 and self.brightness_range[1] == 1:
+            #x = x 
+        #else:
+            #brightness = (self.brightness_range[1] -self.brightness_range[0]) * np.random.random() + self.brightness_range[0]
+            #x = x * brightness
+
+        #if self.color_reversal:
+        	#if np.random.random() < 0.5:
+        		#x = 1-x
+
+  
         # TODO:
         # channel-wise normalization
         # barrel/fisheye
