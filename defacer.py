@@ -112,7 +112,7 @@ class Defacer(object):
 
                 if np.max(lb) > 2:
                     region_list = [region.area for region in regionprops(lb)]       
-                    lb = remove_small_objects(lb, min_size=np.max(region_list)*0.1)
+                    lb = remove_small_objects(lb, min_size=np.max(region_list)*0.25)
 
                 if len(regionprops(lb))!=2 :
                     raise Exception('Could not find proper eyes on the face')
@@ -127,7 +127,7 @@ class Defacer(object):
 
                 if np.max(lb) > 1:
                     region_list = [region.area for region in regionprops(lb)]       
-                    lb = remove_small_objects(lb, min_size=np.max(region_list)*0.1)
+                    lb = remove_small_objects(lb, min_size=np.max(region_list)*0.25)
 
                 if len(regionprops(lb))!=1 :
                     raise Exception('Could not find proper nose on the face')
