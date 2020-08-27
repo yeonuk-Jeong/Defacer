@@ -3,7 +3,7 @@ Asan medical center medical image defacer(de-identification)
 
 ## Results
  
-![Figure2 - Copy](https://user-images.githubusercontent.com/49013508/90996568-1d09fd00-e5fa-11ea-9236-fb630eb7c150.png)
+![Figure2_new](https://user-images.githubusercontent.com/49013508/91407993-125f9a00-e87e-11ea-8548-ce1cf4705f0d.png)
   
 Removing facial feature : 3D rendering sample 
 
