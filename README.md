@@ -56,9 +56,8 @@ This program handles not only the image but also the sensitive header informatio
   
 ## prerequisites
 - python (3.x)
-- tensorflow
-- Keras (Using tensorflow backend)
-
+- tensorflow == 1.14.0
+- Keras== 2.2.4
 ## Comping up 
 - integrating file transfer function with de-id 
 - Web-based service
