@@ -17,7 +17,7 @@ from skimage.measure import label, regionprops
 from skimage.morphology import remove_small_objects
 import matplotlib.pyplot as plt
 from matplotlib import colors
-from tensorflow.keras.utils import to_categorical
+from keras.utils import to_categorical
 from skimage.filters import threshold_triangle
 from skimage.measure import marching_cubes_lewiner
 import model_ver_2_0 as model
