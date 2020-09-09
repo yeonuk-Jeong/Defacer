@@ -9,12 +9,12 @@ Removing facial feature : 3D rendering sample
   
   
 ![face_detection](https://user-images.githubusercontent.com/49013508/92564364-00d1b580-f2b4-11ea-8ddc-5f1cd70a5814.png)
-Face recognition test with Detection_01 model from Microsoft Azure's AI service. The original image was recognized the facial features, but the defaced one was not recognized.
-  
-  
+Face recognition test with Detection_01 model from Microsoft Azure's AI service. The original image was recognized the facial features, but the defaced one was not recognized.  
   
     
-    
+      
+        
+          
   
   
 ### To protect individually identifiable health information through permitting only certain uses, metadata in image headers and reconstructable personal data like 3D facial image must be de-identified.   
