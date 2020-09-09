@@ -6,8 +6,11 @@ Asan medical center medical image defacer(de-identification)
 ![Figure2_new](https://user-images.githubusercontent.com/49013508/91407993-125f9a00-e87e-11ea-8548-ce1cf4705f0d.png)
   
 Removing facial feature : 3D rendering sample 
-
-
+  
+  
+![face_detection](https://user-images.githubusercontent.com/49013508/92564364-00d1b580-f2b4-11ea-8ddc-5f1cd70a5814.png)
+  
+Face recognition test with Detection_01 model from Microsoft Azure's AI service. The original image was recognized the facial features, but the defaced one was not recognized.
 
 
 
