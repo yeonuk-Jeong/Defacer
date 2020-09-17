@@ -84,6 +84,12 @@ training set : 200, validation set : 20, test set : 20, external validation set 
 ## Labeling
 ![gitPicture1](https://user-images.githubusercontent.com/49013508/78311618-4fa05400-758c-11ea-8f22-268abaf287e3.png)
   
+<br/>  
+  
+__Version 2__  
+  
+  ![label_sample](https://user-images.githubusercontent.com/49013508/93437542-10ca4480-f907-11ea-8ff3-36fd7cc1b6b2.png)
+  
 labeling sample. the spherical point at the facial feature.  
 
 ## Data augmentation
@@ -108,7 +114,13 @@ Convolution block + SENet consists of Convolution(3x3) - Instance Normalization 
 
 
 ## Results
-![gitPicture2](https://user-images.githubusercontent.com/49013508/78311624-5202ae00-758c-11ea-855b-8a9f2902c70e.png)
+![gitPicture2](https://user-images.githubusercontent.com/49013508/78311624-5202ae00-758c-11ea-855b-8a9f2902c70e.png)  
+  
+<br/>  
+ 
+__Version 2__  
+  
+  ![results1](https://user-images.githubusercontent.com/49013508/93437550-145dcb80-f907-11ea-817a-8c2432f41c95.png)
 Removing facial feature sample -ITK sanp viewer 
 
 
