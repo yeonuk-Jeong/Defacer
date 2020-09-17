@@ -1,7 +1,7 @@
 Asan medical center medical image defacer(de-identification)
 # De-facer: De-identifier reconstructable facial information in Medical image (CT, MRI) 
 
-## Results
+## Results (version 1)
  
 ![Figure2_new](https://user-images.githubusercontent.com/49013508/91407993-125f9a00-e87e-11ea-8548-ce1cf4705f0d.png)
   
@@ -15,7 +15,7 @@ Face recognition test with Detection_01 model from Microsoft Azure's AI service.
 
 <br/>  
   
-## Version2 
+### Version2 
 
 ![deface_](https://user-images.githubusercontent.com/49013508/93426650-6eef2b80-f8f7-11ea-926d-dcf81076b3fd.png)
 
@@ -23,7 +23,7 @@ Face recognition test with Detection_01 model from Microsoft Azure's AI service.
 
 <br/>
 
-## To protect individually identifiable health information through permitting only certain uses, metadata in image headers and reconstructable personal data like 3D facial image must be de-identified.   
+__To protect individually identifiable health information through permitting only certain uses, metadata in image headers and reconstructable personal data like 3D facial image must be de-identified.__ 
 
 High resolution three-dimensional medical images that include the face can be exposed their faces as the photo level and there is a risk of infringement of personal information when sharing data. According to U.S. Health Insurance Portability and Accountability Act's Privacy Rule (HIPAA), it is included in "full face photographic images and any comparable images"as direct identifiers and is considered as protected health information. General Data Protection Regulation (GDPR) also categorizes facial images as a biometric data. GDPR stipulates that special restrictions should be placed on the processing of biometric data.   
 
