@@ -18,6 +18,7 @@ Face recognition test with Detection_01 model from Microsoft Azure's AI service.
 ### Version2 
 
 ![deface_](https://user-images.githubusercontent.com/49013508/93426650-6eef2b80-f8f7-11ea-926d-dcf81076b3fd.png)
+![image](https://user-images.githubusercontent.com/49013508/97131100-95ba4080-1786-11eb-92fe-1dfebf54b3e1.png)
 
 <br/>
 
