@@ -1,24 +1,14 @@
 Asan medical center medical image defacer(de-identification)
 # De-facer: De-identifier reconstructable facial information in Medical image (CT, MRI) 
 
-## Results (version 1)
- 
-![Figure2_new](https://user-images.githubusercontent.com/49013508/91407993-125f9a00-e87e-11ea-8548-ce1cf4705f0d.png)
-  
+## Results 
+![deface_](https://user-images.githubusercontent.com/49013508/93426650-6eef2b80-f8f7-11ea-926d-dcf81076b3fd.png)  
 Removing facial feature : 3D rendering sample 
   
-  
-![face_detection](https://user-images.githubusercontent.com/49013508/92564364-00d1b580-f2b4-11ea-8ddc-5f1cd70a5814.png)
+![image](https://user-images.githubusercontent.com/49013508/97131100-95ba4080-1786-11eb-92fe-1dfebf54b3e1.png)  
+
 Face recognition test with Detection_01 model from Microsoft Azure's AI service. The original image was recognized the facial features, but the defaced one was not recognized.  
 
-<br/>
-
-<br/>  
-  
-### Version2 
-
-![deface_](https://user-images.githubusercontent.com/49013508/93426650-6eef2b80-f8f7-11ea-926d-dcf81076b3fd.png)
-![image](https://user-images.githubusercontent.com/49013508/97131100-95ba4080-1786-11eb-92fe-1dfebf54b3e1.png)
 
 <br/>
 
