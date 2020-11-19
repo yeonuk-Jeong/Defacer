@@ -379,9 +379,8 @@ class Defacer(object):
                 box[c+3] = int(np.round(wth*(box[c+3]-mean_)+mean_))
                 if box[c] < 0:
                     box[c] = 0
-                if box[c+3] > im_array.shape[2-c]:
-                    # order : im_array-> x,y,z / box-> z,y,x
-                    box[c+3] = im_array.shape[2-c]
+                if box[c+3] > im_array.shape[c]:
+                    box[c+3] = im_array.shape[c]
 
         # voxel coordinates must be 'int'
         
