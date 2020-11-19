@@ -79,7 +79,8 @@ training set : 200, validation set : 20, test set : 20, external validation set 
   
 __Version 2__  
   
-  ![label_sample](https://user-images.githubusercontent.com/49013508/93437542-10ca4480-f907-11ea-8ff3-36fd7cc1b6b2.png)
+![label_1604994200 0363073](https://user-images.githubusercontent.com/49013508/99653352-3e18a780-2a9c-11eb-8cd6-5657082288ce.png)  
+  
   
 labeling sample. the spherical point at the facial feature.  
 
