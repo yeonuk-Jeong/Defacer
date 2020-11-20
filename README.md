@@ -119,7 +119,7 @@ Removing facial feature sample -ITK sanp viewer
   <br/>  
   
 
-__CT test__  
+### CT version test  
   
 ![CT_test002](https://user-images.githubusercontent.com/49013508/99750834-6c41ca00-2b24-11eb-9bbb-76268e64f8d9.png)  
   
