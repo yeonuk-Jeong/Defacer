@@ -20,7 +20,7 @@ High resolution three-dimensional medical images that include the face can be ex
 
 
 
-This source code contains an algorithm for detecting and removing identifiable facial features (eyes, nose, and ears).  
+This source code contains an algorithm for detecting and removing identifiable facial features (eyes, nose, ears and mouth).  
 3D Unet-based neural network were used to detect eyes, nose and ears in the input medical image
 Creating bounding box at the largest segmented points that location of each predicted feature and __only removing surface facial features to avoid impinging on region of interest__ such as brain.     
 this will be help with the secondary use of medical data by obscuring it locally to minimize information loss.  
@@ -57,20 +57,21 @@ This program handles not only the image but also the sensitive header informatio
 
   
 ## prerequisites
-- python (3.x)
-- tensorflow == 1.14.0
+- python==3.7
+- tensorflow == 1.14.0 (in 2.X version, you should correct 'keras' to 'tensorflow.keras' at import keras module) 
 - Keras== 2.2.4
 ## Comping up 
 - integrating file transfer function with de-id 
-- Web-based service
-- Supporting CT images
+- Web-based service (closed beta service in progress)
+- Supporting CT images (now service at Asan medical center)
 
   
 # Model training 
 ## Data
-AIBL neuroimage data Nifty file.  
+AIBL neuroimage data Nifty file from ADNI and OASIS.  
 FOV 240mm * 256mm * 160mm image T1w MPRage  
-training set : 200, validation set : 20, test set : 20, external validation set : 20 (OASIS-3 data, FOV 176mm x 256mm x 256mm)
+training set : 144, validation set : 48, test set : 48, external validation set : 20 (OASIS-3 data, FOV 176mm x 256mm x 256mm)
++ 20 Asan Medical Center 3D 1T image, and CT image
 
 ## Labeling
 ![gitPicture1](https://user-images.githubusercontent.com/49013508/78311618-4fa05400-758c-11ea-8f22-268abaf287e3.png)
@@ -114,8 +115,18 @@ __Version 2__
   
   ![results1](https://user-images.githubusercontent.com/49013508/93437550-145dcb80-f907-11ea-817a-8c2432f41c95.png)
 Removing facial feature sample -ITK sanp viewer 
+  
+  <br/>  
+  
 
+__CT test__  
+  
+![CT_test002](https://user-images.githubusercontent.com/49013508/99750834-6c41ca00-2b24-11eb-9bbb-76268e64f8d9.png)  
+  
+![Ct_test01](https://user-images.githubusercontent.com/49013508/99750847-72d04180-2b24-11eb-8ad0-488a40bed9f7.png)
 
-## paper (in preparation)
-Anonymizing Facial Features in Magnetic Resonance Images Using Deep-Leaning Technology
+<br/>  
+
+## paper (accept in JMIR)
+De-ientification of Facial Features in Magnetic Resonance Images Using Deep-Learning Technology
 -yeonuk jeong, Soyoung Yoo,, Young-Hak Kim, Woo Hyun Shim 
